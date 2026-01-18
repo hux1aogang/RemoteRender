@@ -12,8 +12,6 @@ import android.view.Display
 import android.view.SurfaceControlViewHost
 import android.widget.ImageView
 import androidx.core.view.isVisible
-import com.example.server.IRenderCallback
-import com.example.server.IRenderService
 
 class RenderService : Service() {
     companion object {

@@ -28,8 +28,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.vectordrawable.graphics.drawable.ArgbEvaluator
-import com.example.server.IRenderCallback
-import com.example.server.IRenderService
+import com.example.remoterender.server.IRenderCallback
+import com.example.remoterender.server.IRenderService
 import com.google.android.material.math.MathUtils
 
 
@@ -132,8 +132,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun bindService() {
-        val intent = Intent("com.example.server.RENDER_SERVICE")
-        intent.`package` = "com.example.server"
+        val intent = Intent("com.example.remoterender.server.RENDER_SERVICE")
+        intent.`package` = "com.example.remoterender.server"
         bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
     }
 

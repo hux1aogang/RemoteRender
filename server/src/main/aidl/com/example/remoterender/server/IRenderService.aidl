@@ -1,7 +1,7 @@
 // IRenderService.aidl
 package com.example.remoterender.server;
 
-import com.example.server.IRenderCallback;
+import com.example.remoterender.server.IRenderCallback;
 import android.os.IBinder;
 
 interface IRenderService {
